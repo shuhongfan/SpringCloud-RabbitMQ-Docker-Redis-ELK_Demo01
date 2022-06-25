@@ -106,8 +106,8 @@ spring:
 ```java
 package cn.itcast.user.web;
 
-import cn.itcast.user.pojo.User;
-import cn.itcast.user.service.UserService;
+import User;
+import UserService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
@@ -196,8 +196,8 @@ public class PatternProperties {
 package cn.itcast.user.web;
 
 import cn.itcast.user.config.PatternProperties;
-import cn.itcast.user.pojo.User;
-import cn.itcast.user.service.UserService;
+import User;
+import UserService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -374,7 +374,7 @@ Fegin的使用步骤如下：
 ```java
 package cn.itcast.order.client;
 
-import cn.itcast.order.pojo.User;
+import User;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
